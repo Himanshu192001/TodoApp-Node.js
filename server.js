@@ -10,7 +10,7 @@ const todoRoutes = require('./routes/todo');
 app.use(express.json()); // express.json() is a body parser  middleware 
 
 //add api/v1 versioning on the apis 
-app.use("api/v1" , todoRoutes);
+app.use("/api/v1" , todoRoutes);
 
 
 app.listen(process.env.PORT , () => 

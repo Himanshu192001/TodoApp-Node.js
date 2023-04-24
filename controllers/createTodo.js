@@ -6,7 +6,6 @@ exports.createTodo = async (req , res) =>
 {
     try{
         //getting title and description from the request body
-        console.log(req);
         const {title , description} = req.body;
         // connecting with the database and adding the properties getting from the body 
         const response = Todo.create({title , description});
